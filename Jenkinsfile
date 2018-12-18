@@ -7,17 +7,6 @@ pipeline {
       sh 'sudo chmod +x build.sh'
       sh '/home/centos/cobol/build.sh --no-daemon'
             }
-            }
-      stage ('Image Build') {
-      steps {
-         script {
-      sh "docker build -t praanesh/cobal ."
-      sh "docker login --username=$env.Username --password=$env.password"
-      sh "docker push praanesh/cobal" 
-      
          }
-      } 
-      
-      }
-}
+     }
 }
