@@ -4,7 +4,7 @@ pipeline {
       stage ('Build') {
       steps {
       echo 'Running Build Automation '
-      sh '/home/centos/cobol/build.sh --no-daemon'
+      sh './build.sh --no-daemon'
             }
          }
      }
