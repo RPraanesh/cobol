@@ -6,8 +6,7 @@ pipeline {
       echo 'Running Build Automation '
       sh 'sudo chmod +x build.sh'
       sh '/home/centos/cobol/build.sh --no-daemon'
-      sh 'mv artifacts.txt /home/centos/cobol/mycobal'
-                       }
+            }
             }
       stage ('Image Build') {
       steps {
