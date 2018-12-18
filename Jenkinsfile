@@ -11,8 +11,7 @@ git credentialsId: 'GITHUB', url: 'https://github.com/RPraanesh/cobol'
       stage ('Build') {
      steps {
     echo 'Running Build Automation '
-    sh 'run cobc -x Multiply.cbl>IF-Example.cbl>HelloWorld.cbl>SeqFileExample.cbl>PerformTimes.cbl>PerformExample.cbl>NestedIFExample.cbl>Message.cbl>IncrementExample.cbl>UserInput.cbl
- --no-daemon'
+    sh 'bash ./build.sh --no-daemon'
     
       }
     }
